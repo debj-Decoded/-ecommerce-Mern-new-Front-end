@@ -1,0 +1,20 @@
+.slider-container {
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+}
+
+.slide-image {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
