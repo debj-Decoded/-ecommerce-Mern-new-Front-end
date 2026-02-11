@@ -208,7 +208,7 @@ export default function ProductDet() {
           {/* Options */}
           <div className="mt-4 lg:row-span-3 lg:mt-0">
             <h2 className="sr-only">Product information</h2>
-            <p className="text-3xl tracking-tight text-gray-900">₹  {product.price}.00</p>
+            <p className="text-3xl tracking-tight text-gray-900">₹  {product.price}</p>
             <span className="bg-green-100 text-green-700 text-xs font-medium px-2 py-0.5 rounded">
               {product.discountPercentage}% OFF
             </span>

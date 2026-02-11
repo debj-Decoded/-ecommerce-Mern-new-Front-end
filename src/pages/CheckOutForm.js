@@ -60,7 +60,8 @@ export default function CheckOutForm() {
       elements,
       confirmParams: {
         // Make sure to change this to your payment completion page
-        return_url: `http://localhost:3000/OrderSuccess/${currentorder.id}`,
+        // return_url: `http://euuro/OrderSuccess/${currentorder.id}`,
+        return_url: `https://ecommerce-mern-new-kappa/OrderSuccess/${currentorder.id}`,
         // return_url: "http://localhost:3000/",
       },
     });

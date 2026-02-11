@@ -97,7 +97,7 @@ export function Cart() {
                         <h3>
                           <a href={Item.href}>{Item.product.title}</a>
                         </h3>
-                        <p className="ml-4">₹ {Item.product.price}.00</p>
+                        <p className="ml-4">₹ {Item.product.price.toFixed(2)}</p>
                       </div>
                       <p className="mt-1 text-sm text-gray-500">{Item.color}</p>
                     </div>
@@ -147,7 +147,7 @@ export function Cart() {
         <div className="border-t border-gray-200 px-4 mt-5 py-6 sm:px-6">
           <div className="flex justify-between text-base font-medium text-gray-900">
             <p>Subtotal</p>
-            <p>₹ {totalCount.toFixed(2)}.00</p>
+            <p>₹ {totalCount.toFixed(2)}</p>
           </div>
           <div className="flex justify-between text-base my-4 font-medium text-gray-900">
             <p>Quantity</p>

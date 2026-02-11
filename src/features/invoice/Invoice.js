@@ -109,7 +109,7 @@ const Invoice = () => {
             <strong>Subtotal:</strong> {order.totalAmount.toFixed(2)}
           </p>
           <p>
-            <strong>Tax (18%):</strong> {order.totalAmount * 0.18}
+            <strong>Tax (18%):</strong> {order.totalAmount.toFixed(2) * 0.18}
           </p>
           <p>
             <strong>Total:</strong> ₹ {(order.totalAmount + order.totalAmount * 0.18).toFixed(2)}

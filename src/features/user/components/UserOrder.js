@@ -29,7 +29,7 @@ export const UserOrder = () => {
     return (
         <>
             <div>
-                <h1>wqe</h1>
+   
                 {orders && orders.map((order) => (
                     <div>
                         {orderStatus === 'loading' ? <div className="content-center z-30">
@@ -77,7 +77,7 @@ export const UserOrder = () => {
                                                                 <h3>
                                                                     <a href={item.product.href}>{item.product.title}</a>
                                                                 </h3>
-                                                                <p className="ml-4">${item.product.price}</p>
+                                                                <p className="ml-4">${item.product.price.toFixed(2)}</p>
                                                             </div>
                                                             <p className="mt-1 text-sm text-gray-500">
                                                                 {item.product.brand}
